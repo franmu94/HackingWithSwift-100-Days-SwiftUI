@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='1.1. Variables'/>
+        <page name='1.2 Strings'/>
+        <page name='1.3 Integers'/>
+        <page name='1.4 Doubles'/>
+        <page name='2.1 Booleans'/>
+        <page name='2.2 String Interpolation'/>
+        <page name='Checkpoint 1'/>
+        <page name='3.1 Arrays'/>
+        <page name='3.2 Dictionaries'/>
+        <page name='3.1 Sets'/>
+        <page name='3.3 enums'/>
+        <page name='4.1 Type annotations'/>
+        <page name='Checkpoint 2'/>
+        <page name='5.1 If operator'/>
+        <page name='5.2 Multiple conditions'/>
+        <page name='5.3 Switch operator'/>
+        <page name='5.4 Ternary operator'/>
+        <page name='6.1 For loop'/>
+        <page name='6.2 Whilw loop'/>
+        <page name='6.3 Skip loops'/>
+        <page name='Checkpoint 3'/>
+        <page name='7.1 Functions_1'/>
+        <page name='7.2 Function_2_return'/>
+        <page name='7.3 Multiple return'/>
+        <page name='7.4 Customize parameters'/>
+        <page name='8.1 Default parameters'/>
+        <page name='8.2 Error in functions'/>
+        <page name='Checkpoint 4'/>
+        <page name='9.1 Closures'/>
+        <page name='9.2 trailing closures'/>
+        <page name='9.3 Functions as parameters'/>
+        <page name='Checkpoint 5'/>
+        <page name='Untitled Page'/>
+        <page name='10.1 Structs'/>
+        <page name='10.2 Compute properties'/>
+        <page name='10.3 Properties observes '/>
+        <page name='10.4 Initializers'/>
+        <page name='11.1 Access control'/>
+        <page name='11.2 Static properties'/>
+        <page name='12.1 Classes'/>
+        <page name='Checkpoint 6'/>
+        <page name='12.2 Clas inherit'/>
+        <page name='12.3 Initializers for classes'/>
+        <page name='12.4 How to copy classes'/>
+        <page name='12.5 Deinitializer for a class'/>
+        <page name='12.6 Variables inside classes'/>
+        <page name='Checkpoint 7'/>
+        <page name='13.1 Protocols'/>
+        <page name='13.2 Opaque return'/>
+        <page name='13.3 Extensions'/>
+        <page name='13.4 Protocol extensions'/>
+        <page name='Untitled Page 2'/>
+        <page name='Checkpoint 8'/>
+        <page name='14.1 Optionals'/>
+        <page name='14.2 Guard else'/>
+        <page name='14.3 Nil coalescing'/>
+        <page name='Untitled Page 4'/>
+        <page name='Untitled Page 5'/>
+        <page name='Untitled Page 6'/>
+    </pages>
+</playground>
