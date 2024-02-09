@@ -31,11 +31,11 @@ struct ContentView: View {
                 }
                 
                 Section (header: Text("Seccion Picker, con ForEach dentro del Picker").textCase(nil)){
-                    Picker("Select your student", selection: $selectedStudent, content: {
+                    Picker("Select your student", selection: $selectedStudent) {
                         ForEach(students, id: \.self) {Text($0)}
-                    })
+                    }
                 }
-                Section (header: Text("Seccion ForEach, con ForEach dentro del Form").textCase(nil)){
+                Section (header: Text("Seccion ForEach, con ForEach dentro del Form").textCase(nil), footer: Text("end of section")){
                     ForEach(0 ..< 4) {
                         Text("Row \($0)")
                     }
