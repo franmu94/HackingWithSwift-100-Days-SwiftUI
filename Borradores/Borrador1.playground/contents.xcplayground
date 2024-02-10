@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Untitled Page 2'/>
+        <page name='Untitled Page 3'/>
+        <page name='Reto_4_2023'/>
+        <page name='Reto_6_2023'/>
+        <page name='Untitled Page 4'/>
+        <page name='Reto_8_2023'/>
+        <page name='Ejemplos_sort'/>
+        <page name='Untitled Page 5'/>
+        <page name='Reto_9_2023'/>
+        <page name='Hidden Cubicnumbers '/>
+        <page name='Untitled Page 6'/>
+        <page name='Reto_16_Swift'/>
+        <page name='Untitled Page'/>
+    </pages>
+</playground>
