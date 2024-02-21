@@ -9,17 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var useRedText = false
-    
-    var body: some View {
-        VStack{
-            Text("Gryffindor")
-                .blur(radius: 5)
-            Text("Hufflepuf")
-            Text("Ravenclaw")
-            Text("Slytherin")
+    struct CapsuleText: View {
+        var text: String
+
+        var body: some View {
+            Text(text)
+                .font(.largeTitle)
+                .padding()
+                .background(.blue)
+                .clipShape(.capsule)
         }
-        .blur(radius: 0)
+    }
+    var body: some View {
+        VStack(spacing: 10) {
+            CapsuleText(text: "First")
+                .foregroundStyle(.white)
+
+            CapsuleText(text: "Second")
+                .foregroundStyle(.red)
+
+        }
     }
     
 }
