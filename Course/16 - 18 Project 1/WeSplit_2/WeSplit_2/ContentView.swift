@@ -30,6 +30,7 @@ struct ContentView: View {
     var gradTotal2: Double {
         checkAmount * (1 + Double(tipPercentage) / 100)
     }
+    
 
     
     var body: some View {
@@ -67,9 +68,11 @@ struct ContentView: View {
                 }
                 Section("Total"){
                     Text(gradTotal2, format:  .currency(code:localCurrency))
+                        .foregroundStyle( tipPercentage == 0 ? Color.red : Color.primary)
                 }
                 Section("Amount per person:"){
                     Text(totalPerPerson, format:  .currency(code:localCurrency))
+
                 }
                 
                 
