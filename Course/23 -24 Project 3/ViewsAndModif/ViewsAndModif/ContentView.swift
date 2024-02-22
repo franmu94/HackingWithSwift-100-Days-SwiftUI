@@ -46,13 +46,25 @@ struct Watermark: ViewModifier {
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
+        VStack(alignment: .leading) {
+            ZStack(alignment: .bottomTrailing) {
+                
+                Color.blue
+                    .frame(width: 300, height: 200)
+                Text("Hacking with Swift")
+                    .font(.caption)
+                    .foregroundStyle(.white)
+                    .padding(5)
+                    .background(.black)
+            }
             Color.blue
-            Image(systemName: "sun.max.fill")
-                .foregroundStyle(.yellow)
-                .t
+                .frame(width: 300, height: 200)
+                .watermarked(with: "HWS")
+            
+            Text("provddddddddddddd\n")
+                .watermarked(with: "eee")
         }
-        .frame(width: .infinity, height: .infinity)
+        .watermarked(with: "jajajja")
     }
     
 }
