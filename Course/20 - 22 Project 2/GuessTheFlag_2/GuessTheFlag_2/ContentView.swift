@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+
+struct FlagImage: View {
+    var name: String
+    
+    var body: some View {
+        Image(name)
+            .clipShape(.capsule)
+            .shadow(color: Color.yellow, radius: 5)
+    }
+}
+
 struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
@@ -57,9 +68,7 @@ struct ContentView: View {
                             flagTapped(number)
                             askQuestion()
                         } label: {
-                            Image(countries[number])
-                                .clipShape(.capsule)
-                                .shadow(color: Color.yellow, radius: 5)
+                            FlagImage(name: countries[number])
                         }
                     }
                 }
