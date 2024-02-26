@@ -8,22 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingScore = false
+
     
     @State private var moves2 = [
         ("🗿",Color.black),
         ("📃",Color.white),
         ("✂️",Color.blue)
-        
+    
     ]
+    @State private var life = "♥️♥️♥️"
     
-    @State private var moves = ["🗿", "📃", "✂️"].shuffled()
+    @State private var score = 0
     
-    @State private var GameChose: Int = Int.random(in: 0..<2)
+    @State private var GameChose: Int = Int.random(in: 0..<3)
+    
     @State private var PlayerChose: String = ""
     
-    var PlayerShouldWin: Bool {
-        Bool.random()
-    }
+    @State private var PlayerShouldWin =  Bool.random()
     
     var body: some View {
             ZStack{
@@ -31,9 +33,7 @@ struct ContentView: View {
                     Color(.yellow)
                         .frame(width: .infinity, height:300 )
 
-                    
-                    
-                    HStack(spacing: 0){
+                                        HStack(spacing: 0){
                         ForEach(moves2, id: \.self.0) { a in
                             LinearGradient(colors: [.yellow, a.1], startPoint: .top, endPoint: .bottom)
                                 .frame(width: .infinity, height:.infinity )
@@ -44,23 +44,38 @@ struct ContentView: View {
                 }
                 .ignoresSafeArea()
 
-                VStack {
-                    
-                    Text(moves[GameChose])
+                VStack(spacing: 0) {
+                    Spacer(minLength: 150)
+                    HStack{
+                        Group{
+                            Text("Score: \(score)/10")
+                        }
+                    }
+
+                    Text(moves2[GameChose].0)
                         .font(.system(size: 250))
-                    Text("You must... \(PlayerShouldWin ? "Win" : "Lose")!")
-                        .multilineTextAlignment(.trailing)
-                    
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    
-                    Spacer()
-                    Spacer()
+                        Text("You must... \(PlayerShouldWin ? "Win" : "Lose")!")
+                            .font(.largeTitle)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+
+                    Spacer(minLength: 100)
+                    HStack{
+                        Group{
+                            Text(life)
+                        }
+                            .frame(maxWidth: 100)
+                            .padding(.vertical, 20)
+                            .clipShape(.rect(cornerRadius: 20))
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+
+                    }
                     HStack(spacing: 55){
                         ForEach(moves2, id: \.self.0) { a in
                             Button {
-                                GameChose = Int.random(in: 0..<2)
+                                figureChosed(a.0)
+                                PlayerShouldWin.toggle()
+                                print(GameChose)
+                                GameChose = Int.random(in: 0..<3)
                             } label: {
                                 Text(a.0)
                                     .font(.system(size: 70))
@@ -71,16 +86,55 @@ struct ContentView: View {
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 20)
-                    .background(.regularMaterial)
+                    .background(.ultraThinMaterial)
                     .clipShape(.rect(cornerRadius: 20))
-                    Spacer()
-                    Spacer()
-                    Spacer()
                     
+                    Spacer(minLength: 150)
                     
+         
+
                 }
                 .padding()
             }
+            .alert("game over", isPresented: $showingScore) {
+                Button("Continue", action: {showingScore = true})
+            } message: {
+                Text(life.isEmpty ? "You lost" : "You won!")
+
+            }
+    }
+    func figureChosed(_ anwser: String){
+        let n1 = PlayerShouldWin ? 1 : 0
+        let n0 = PlayerShouldWin ? 0 : 1
+        var oldscore = score
+        if anwser == "🗿" {
+            if GameChose == 2 {
+                score += n1
+            } else {
+                score += n0
+            }
+        } else if anwser == "📃" {
+            if GameChose == 0 {
+                score += n1
+            } else {
+                score += n0
+            }
+        } else if anwser == "✂️" {
+            if GameChose == 1 {
+                score += n1
+            } else {
+                score += n0
+            }
+        }
+        if oldscore == score {
+            life = String(life.dropLast())
+        }
+        
+        if score == 10 || life.isEmpty {
+            score = 0
+            life = "♥️♥️♥️"
+            showingScore = true
+        }
     }
 }
 
