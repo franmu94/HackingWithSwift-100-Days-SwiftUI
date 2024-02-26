@@ -74,7 +74,6 @@ struct ContentView: View {
                             Button {
                                 figureChosed(a.0)
                                 PlayerShouldWin.toggle()
-                                print(GameChose)
                                 GameChose = Int.random(in: 0..<3)
                             } label: {
                                 Text(a.0)
@@ -97,7 +96,7 @@ struct ContentView: View {
                 .padding()
             }
             .alert("game over", isPresented: $showingScore) {
-                Button("Continue", action: {showingScore = true})
+                Button("Continue", action: {score = 0})
             } message: {
                 Text(life.isEmpty ? "You lost" : "You won!")
 
@@ -131,7 +130,6 @@ struct ContentView: View {
         }
         
         if score == 10 || life.isEmpty {
-            score = 0
             life = "♥️♥️♥️"
             showingScore = true
         }
