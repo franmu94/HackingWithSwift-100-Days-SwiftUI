@@ -34,3 +34,21 @@ extension CGPoint {
         l = CGPoint(x: l.x + r.x, y: l.y + r.y)
     }
 }
+
+punto1 + punto2
+punto2 += punto3
+
+precedencegroup MultiMutiply {
+    associativity: left
+    higherThan: AdditionPrecedence
+}
+
+infix operator **: MultiMutiply
+
+extension Int {
+    static func ** (l: Int, r: Int) -> Int {
+        (l*2) + (r*2)
+    }
+}
+
+2 ** 3
