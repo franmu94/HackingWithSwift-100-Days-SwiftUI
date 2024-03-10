@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D3679D1D2B9DD626004508E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D1C2B9DD626004508E3 /* AppDelegate.swift */; };
 		D3679D1F2B9DD626004508E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D1E2B9DD626004508E3 /* SceneDelegate.swift */; };
-		D3679D212B9DD626004508E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D202B9DD626004508E3 /* ViewController.swift */; };
 		D3679D242B9DD626004508E3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D3679D232B9DD626004508E3 /* Base */; };
 		D3679D262B9DD628004508E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3679D252B9DD628004508E3 /* Assets.xcassets */; };
 		D3679D292B9DD628004508E3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D3679D282B9DD628004508E3 /* Base */; };
@@ -17,13 +16,16 @@
 		D3679D362B9DDF32004508E3 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D352B9DDF32004508E3 /* Scores.swift */; };
 		D3679D392B9DE7A3004508E3 /* DataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D382B9DE7A3004508E3 /* DataInteractor.swift */; };
 		D3679D3C2B9DEC2C004508E3 /* ScoreLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D3B2B9DEC2C004508E3 /* ScoreLogic.swift */; };
+		D3679D3F2B9DF499004508E3 /* DataPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D3E2B9DF499004508E3 /* DataPreview.swift */; };
+		D3679D412B9DF4C5004508E3 /* scoresdatatest.json in Resources */ = {isa = PBXBuildFile; fileRef = D3679D402B9DF4C5004508E3 /* scoresdatatest.json */; };
+		D3679D442B9E3CAB004508E3 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D432B9E3CAB004508E3 /* JSONLoader.swift */; };
+		D3679D482B9E406E004508E3 /* ScoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D472B9E406E004508E3 /* ScoresTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D3679D192B9DD626004508E3 /* UIKiyJueves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKiyJueves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3679D1C2B9DD626004508E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3679D1E2B9DD626004508E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3679D202B9DD626004508E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3679D232B9DD626004508E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3679D252B9DD628004508E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3679D282B9DD628004508E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +34,10 @@
 		D3679D352B9DDF32004508E3 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
 		D3679D382B9DE7A3004508E3 /* DataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInteractor.swift; sourceTree = "<group>"; };
 		D3679D3B2B9DEC2C004508E3 /* ScoreLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreLogic.swift; sourceTree = "<group>"; };
+		D3679D3E2B9DF499004508E3 /* DataPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPreview.swift; sourceTree = "<group>"; };
+		D3679D402B9DF4C5004508E3 /* scoresdatatest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scoresdatatest.json; sourceTree = "<group>"; };
+		D3679D432B9E3CAB004508E3 /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		D3679D472B9E406E004508E3 /* ScoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				D3679D222B9DD626004508E3 /* Main.storyboard */,
-				D3679D202B9DD626004508E3 /* ViewController.swift */,
+				D3679D472B9E406E004508E3 /* ScoresTableViewController.swift */,
 				D3679D3A2B9DEC16004508E3 /* Logic */,
 				D3679D372B9DE720004508E3 /* Interactor */,
 				D3679D252B9DD628004508E3 /* Assets.xcassets */,
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D3679D382B9DE7A3004508E3 /* DataInteractor.swift */,
+				D3679D432B9E3CAB004508E3 /* JSONLoader.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 		D3679D3D2B9DF222004508E3 /* TestContent */ = {
 			isa = PBXGroup;
 			children = (
+				D3679D3E2B9DF499004508E3 /* DataPreview.swift */,
+				D3679D402B9DF4C5004508E3 /* scoresdatatest.json */,
 			);
 			path = TestContent;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 				D3679D342B9DDECB004508E3 /* scoresdata.json in Resources */,
 				D3679D262B9DD628004508E3 /* Assets.xcassets in Resources */,
 				D3679D292B9DD628004508E3 /* Base in Resources */,
+				D3679D412B9DF4C5004508E3 /* scoresdatatest.json in Resources */,
 				D3679D242B9DD626004508E3 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,9 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3679D482B9E406E004508E3 /* ScoresTableViewController.swift in Sources */,
 				D3679D392B9DE7A3004508E3 /* DataInteractor.swift in Sources */,
 				D3679D3C2B9DEC2C004508E3 /* ScoreLogic.swift in Sources */,
-				D3679D212B9DD626004508E3 /* ViewController.swift in Sources */,
+				D3679D3F2B9DF499004508E3 /* DataPreview.swift in Sources */,
+				D3679D442B9E3CAB004508E3 /* JSONLoader.swift in Sources */,
 				D3679D1D2B9DD626004508E3 /* AppDelegate.swift in Sources */,
 				D3679D362B9DDF32004508E3 /* Scores.swift in Sources */,
 				D3679D1F2B9DD626004508E3 /* SceneDelegate.swift in Sources */,

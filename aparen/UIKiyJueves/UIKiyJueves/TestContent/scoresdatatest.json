@@ -1,0 +1,172 @@
+[
+    {
+        "id": 1,
+        "title": "Star Wars",
+        "composer": "John Williams",
+        "year": 1977,
+        "length": 70,
+        "cover": "StarWars",
+        "tracks": [
+            "Main Title",
+            "Imperial Attack",
+            "Princess Leia's Theme",
+            "The Desert and the Robot Auction",
+            "Ben's Death and TIE Fighter Attack",
+            "The Little People Work",
+            "Rescue of the Princess",
+            "Inner City",
+            "Cantina Band",
+            "The Land of the Sand People",
+            "Mouse Robot and Blasting Off",
+            "The Return Home",
+            "The Walls Converge",
+            "The Princess Appears",
+            "The Last Battle",
+            "The Throne Room and End Title"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "The Fury",
+        "composer": "John Williams",
+        "year": 1978,
+        "length": 65,
+        "cover": "TheFury",
+        "tracks": [
+            "Main Title",
+            "For Gillian",
+            "Vision On The Stairs",
+            "Hesther's Theme And The House",
+            "Gillian's Escape",
+            "The Search For Robin",
+            "Death On The Carousel",
+            "Gillian's Vision",
+            "Death On The Carousel And End Title"
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Krull",
+        "composer": "James Horner",
+        "year": 1983,
+        "length": 56,
+        "cover": "Krull",
+        "tracks": [
+            "Riding The Fire Mares",
+            "Slayer's Attack",
+            "Widow's Web",
+            "The Widow's Lullaby",
+            "Destruction Of The Black "
+        ]
+    },
+    {
+        "id": 15,
+        "title": "Star Trek II: The Wrath of Khan",
+        "composer": "James Horner",
+        "year": 1982,
+        "length": 64,
+        "cover": "StarTrekKhan",
+        "tracks": [
+            "Main Title",
+            "Surprise Attack",
+            "Spock",
+            "Kirk's Explosive Reply",
+            "Khan's Pets",
+            "Enterprise Clears Mooring",
+            "Battle in the Mutara Nebula",
+            "Genesis Countdown",
+            "Epilogue / End Title"
+        ]
+    },
+    {
+        "id": 30,
+        "title": "The Omen",
+        "composer": "Jerry Goldsmith",
+        "year": 1976,
+        "length": 34,
+        "cover": "TheOmen",
+        "tracks": [
+            "Ave Satani",
+            "The New Ambassador",
+            "Killer's Storm",
+            "A Sad Message",
+            "The Demise of Mrs.Baylock",
+            "Don't Let Him",
+            "The Piper Dreams",
+            "The Fall",
+            "Safari Park",
+            "The Dog's Attack",
+            "The Homecoming",
+            "The Altar"
+        ]
+    },
+    {
+        "id": 31,
+        "title": "The Boys from Brazil",
+        "composer": "Jerry Goldsmith",
+        "year": 1978,
+        "length": 34,
+        "cover": "BoysFromBrazil",
+        "tracks": [
+            "Suite From 'The Boys From Brazil'",
+            "We're Home Again - Performed by Elaine Paige",
+            "Frau Doring",
+            "The Dogs And Finale"
+        ]
+    },
+    {
+        "id": 51,
+        "title": "Alias",
+        "composer": "Michael Giacchino",
+        "year": 2001,
+        "length": 65,
+        "cover": "Alias",
+        "tracks": [
+            "Main Title",
+            "On the Train",
+            "Mother of a Mother",
+            "Rabat",
+            "Over the Edge",
+            "Emily\u2019s Eulogy",
+            "Fond Memories",
+            "Post A-Mortem",
+            "Syd\u2019s Best Alias Yet",
+            "Going Down?",
+            "Sydney Implores Dixon",
+            "Aftermath Class",
+            "Sarkavator",
+            "I\u2019m So Promoted",
+            "I\u2019m So Screwed",
+            "I\u2019m So Demoted",
+            "Inferno",
+            "Do I Have To Do Another Eulogy?",
+            "Something Fishy",
+            "Sloane\u2019s Revelation",
+            "Hitting the Fan",
+            "Balboa and Clubber",
+            "Almost Two Years"
+        ]
+    },
+    {
+        "id": 52,
+        "title": "The Incredibles",
+        "composer": "Michael Giacchino",
+        "year": 2004,
+        "length": 55,
+        "cover": "TheIncredibles",
+        "tracks": [
+            "The Glory Days",
+            "Meet Elastigirl",
+            "Bob Vs The Omnidroid",
+            "Life's Incredible Again",
+            "Off To Work",
+            "Kronos Unveiled",
+            "Missle Lock",
+            "Lithe Or Death",
+            "100 Mile dash",
+            "Road Trip!",
+            "Saving Metroville",
+            "The Incredits"
+        ]
+    }
+]
