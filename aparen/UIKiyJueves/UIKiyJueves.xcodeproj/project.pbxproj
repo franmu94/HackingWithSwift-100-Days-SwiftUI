@@ -15,6 +15,8 @@
 		D3679D292B9DD628004508E3 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D3679D282B9DD628004508E3 /* Base */; };
 		D3679D342B9DDECB004508E3 /* scoresdata.json in Resources */ = {isa = PBXBuildFile; fileRef = D3679D332B9DDECB004508E3 /* scoresdata.json */; };
 		D3679D362B9DDF32004508E3 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D352B9DDF32004508E3 /* Scores.swift */; };
+		D3679D392B9DE7A3004508E3 /* DataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D382B9DE7A3004508E3 /* DataInteractor.swift */; };
+		D3679D3C2B9DEC2C004508E3 /* ScoreLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3679D3B2B9DEC2C004508E3 /* ScoreLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		D3679D2A2B9DD628004508E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3679D332B9DDECB004508E3 /* scoresdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scoresdata.json; sourceTree = "<group>"; };
 		D3679D352B9DDF32004508E3 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
+		D3679D382B9DE7A3004508E3 /* DataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInteractor.swift; sourceTree = "<group>"; };
+		D3679D3B2B9DEC2C004508E3 /* ScoreLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,15 @@
 		D3679D1B2B9DD626004508E3 /* UIKiyJueves */ = {
 			isa = PBXGroup;
 			children = (
-				D3679D202B9DD626004508E3 /* ViewController.swift */,
 				D3679D222B9DD626004508E3 /* Main.storyboard */,
+				D3679D202B9DD626004508E3 /* ViewController.swift */,
+				D3679D3A2B9DEC16004508E3 /* Logic */,
+				D3679D372B9DE720004508E3 /* Interactor */,
 				D3679D252B9DD628004508E3 /* Assets.xcassets */,
 				D3679D312B9DDDFF004508E3 /* Model */,
 				D3679D322B9DDE82004508E3 /* Resources */,
 				D3679D302B9DD65C004508E3 /* System */,
+				D3679D3D2B9DF222004508E3 /* TestContent */,
 			);
 			path = UIKiyJueves;
 			sourceTree = "<group>";
@@ -95,6 +102,29 @@
 				D3679D332B9DDECB004508E3 /* scoresdata.json */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D3679D372B9DE720004508E3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D3679D382B9DE7A3004508E3 /* DataInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		D3679D3A2B9DEC16004508E3 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				D3679D3B2B9DEC2C004508E3 /* ScoreLogic.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		D3679D3D2B9DF222004508E3 /* TestContent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TestContent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3679D392B9DE7A3004508E3 /* DataInteractor.swift in Sources */,
+				D3679D3C2B9DEC2C004508E3 /* ScoreLogic.swift in Sources */,
 				D3679D212B9DD626004508E3 /* ViewController.swift in Sources */,
 				D3679D1D2B9DD626004508E3 /* AppDelegate.swift in Sources */,
 				D3679D362B9DDF32004508E3 /* Scores.swift in Sources */,
@@ -324,6 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = UIKiyJueves/TestContent;
 				DEVELOPMENT_TEAM = L46T9NVJ2U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKiyJueves/Info.plist;
@@ -354,6 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = UIKiyJueves/TestContent;
 				DEVELOPMENT_TEAM = L46T9NVJ2U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKiyJueves/Info.plist;
