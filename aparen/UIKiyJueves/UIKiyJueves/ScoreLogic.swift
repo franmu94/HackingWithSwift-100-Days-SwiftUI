@@ -20,10 +20,22 @@ final class ScoreLogic {
         self.scores = (try? interactor.getScores()) ?? []
     }
     
-    func removeScore(score: Score) {}
+    func getScore (indexPath: IndexPath) -> Score {
+        scores[indexPath.row]
+    }
+    
+    func removeScore(indexPath: IndexPath) {
+        scores.remove(at: indexPath.row)
+    }
+    
+    func moveScore(indexPath: IndexPath, to: IndexPath) {
+        scores.swapAt(indexPath.row, to.row)
+    }
 
+    
     func updateScore(score: Score) {}
 
+    
 }
 
 
